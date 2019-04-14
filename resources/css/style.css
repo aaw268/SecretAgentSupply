@@ -57,6 +57,7 @@ font-size: 2rem !important;
 }
 .banner-text h2{
 font-size: 1rem !important;
+padding-bottom: 0.25rem;
 }
 /*Navbar Section*/
 .navbar{
@@ -76,11 +77,15 @@ nav{
   justify-content: space-between;
 }
 /* Product Section*/
+.product-container{
+  background-color: white;
+}
 .product-section{
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .product-row{
   display: flex;
@@ -90,4 +95,51 @@ nav{
 .column{
   display: flex;
   flex-direction: column;
+  border: 4px solid black;
+  width: 30%;
+}
+.column span{
+  border: 1px solid black;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.column img{
+  height: 9rem;
+  padding: 2rem 2rem;
+}
+/*Info Section*/
+.info-section{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+background-color: white;
+}
+.info-container{
+  background-color: white;
+  padding-bottom: 4rem;
+}
+.info p{
+  color: black;
+}
+.column.info{
+  width: 35%;
+}
+/*Footer Section*/
+.footer-container{
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  border: 1px solid black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.footer-section{
+text-align: left;
 }
