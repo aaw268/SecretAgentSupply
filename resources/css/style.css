@@ -76,3 +76,18 @@ nav{
   justify-content: space-between;
 }
 /* Product Section*/
+.product-section{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-top: 3rem;
+}
+.product-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
