@@ -21,7 +21,7 @@ body{
   align-items: center;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 .logo{
   padding-left: 0.5rem;
@@ -45,18 +45,18 @@ body{
   font-weight: bold;
   padding-top: 9rem;
 }
-.banner-text{
+#banner-text{
   border: 1px solid black;
   background-color: black;
   width: 20rem;
   padding: 2rem 3rem;
 }
-.banner-text h1{
-font-size: 2rem !important;
+#banner-text h1{
+font-size: 2rem;
 
 }
-.banner-text h2{
-font-size: 1rem !important;
+#banner-text h2{
+font-size: 1rem;
 padding-bottom: 0.25rem;
 }
 /*Navbar Section*/
@@ -113,7 +113,7 @@ nav{
 .info-section{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 margin-left: auto;
 margin-right: auto;
 width: 960px;
@@ -136,10 +136,46 @@ background-color: white;
   margin-right: auto;
   width: 960px;
   border: 1px solid black;
-  height: 5rem;
+  height: 10rem;
   display: flex;
   align-items: center;
 }
 .footer-section{
 text-align: left;
+}
+/*Tablet Section*/
+@media only screen and (max-width: 1024px){
+  #banner-text h1{
+    font-family: Helvetica;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #banner-text h2{
+    font-family: Helvetica;
+    font-size: 0.885rem;
+    font-weight: bold;
+  }
+  #banner-text{
+    padding: 1.5rem 2.5rem;
+  }
+  nav a{
+    
+  }
+}
+
+/*Mobile Section*/
+@media only screen and (max-width: 470px){
+  #banner-text h1{
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #banner-text h2{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+  #banner-text{
+    padding: 1rem 2rem;
+  }
 }
